@@ -1,0 +1,40 @@
+.title{
+  margin: 0;
+    &-1{
+      font-size: 51px;
+      font-family: $font-base;
+      font-weight: 700;
+      line-height: 1em;
+        @include max(md){
+          font-size: 44px;
+        }
+        @include max(xsm){
+          font-size: 40px;
+        }
+        @include max(xs){
+          font-size: 38px;
+        }
+    }
+    &-2{
+      font-family: $font-base;
+      font-weight: 300;
+    }
+    &-3{
+      font-size: 36px;
+      font-family: $font-base;
+      font-weight: 700;
+      line-height: 1.250em;
+    }
+    &-4{
+      font-size: 24px;
+      font-family: $font-base;
+      font-weight: 700;
+      line-height: 1.250em;
+    }
+    &-5{
+      font-size: 18px;
+      font-family: $font-base;
+      font-weight: 700;
+      line-height: 1.278em;
+    }
+}

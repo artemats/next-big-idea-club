@@ -1,0 +1,50 @@
+.download-banner{
+  background-color: $color-blue;
+  color: $white;
+  padding: 61px 0 0;
+  overflow: hidden;
+    &-content{
+      padding: 40px 0;
+        @include max(sm){
+          text-align: center;
+        }
+    }
+    &-preview{
+      max-width: 338px;
+      margin: 0 auto -193px;
+      padding: 0 0 0 34px;
+        @include max(lg){
+          margin: 0 0 -193px;
+          padding: 0 20px 0 0;
+        }
+        @include max(sm){
+          display: none;
+        }
+    }
+    &-action{
+      display: flex;
+      flex-wrap: wrap;
+      margin-top: 23px;
+        .download-link{
+          margin: 0 20px 10px 0;
+            &:last-child{
+              margin-right: 0;
+            }
+        }
+        @include max(sm){
+          justify-content: center;
+        }
+        @include max(xsm){
+          margin-top: 30px;
+            .download-link{
+              margin: 0 0 15px;
+            }
+        }
+    }
+    @include max(md){
+      padding: 60px 0;
+    }
+    @include max(xsm){
+      padding: 10px 0;
+    }
+}

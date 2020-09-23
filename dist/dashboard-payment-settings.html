@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+
+  <title>Next Big Idea Club</title>
+
+  <link rel="icon" type="image/png" href="img/favicon.png">
+
+  <meta name="msapplication-TileColor" content="#FFFFFF">
+  <meta name="theme-color" content="#1948CB">
+  <meta name="msapplication-navbutton-color" content="#1948CB">
+  <meta name="apple-mobile-web-app-status-bar-style" content="#1948CB">
+
+  <link rel="preload" href="fonts/helvetica-neue-condensed-bold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="fonts/helvetica-neue-condensed-bold.woff" as="font" type="font/woff" crossorigin="anonymous">
+  <link rel="preload" href="fonts/helvetica-neue-condensed-bold.ttf" as="font" type="font/ttf" crossorigin="anonymous">
+  <link rel="preload" href="fonts/SourceSansPro-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="fonts/SourceSansPro-Regular.woff" as="font" type="font/woff" crossorigin="anonymous">
+  <link rel="preload" href="fonts/SourceSansPro-Regular.ttf" as="font" type="font/ttf" crossorigin="anonymous">
+  <link rel="preload" href="fonts/SourceSansPro-Bold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="fonts/SourceSansPro-Bold.woff" as="font" type="font/woff" crossorigin="anonymous">
+  <link rel="preload" href="fonts/SourceSansPro-Bold.ttf" as="font" type="font/ttf" crossorigin="anonymous">
+  <link rel="preload" href="fonts/SourceSansPro-Light.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="fonts/SourceSansPro-Light.woff" as="font" type="font/woff" crossorigin="anonymous">
+  <link rel="preload" href="fonts/SourceSansPro-Light.ttf" as="font" type="font/ttf" crossorigin="anonymous">
+
+  <link rel="prefetch" href="css/styles.min.css" as="style">
+  <link rel="prefetch" href="js/scripts.min.js" as="script">
+
+  <link rel="stylesheet" href="css/styles.min.css">
+
+</head>
+<body>
+
+<main class="page-main">
+<header class="page-header">
+  <div class="container">
+    <div class="page-header--row">
+      <div class="page-header--row--col __menu">
+        <button data-action="toggle-menu" class="btn-toggle-menu">
+          <i></i>
+          <i></i>
+          <i></i>
+        </button>
+      </div>
+      <div class="page-header--row--col __logo">
+        <a href="./" class="logo">
+          <img src="./img/logo.png" alt="">
+        </a>
+      </div>
+      <div class="page-header--row--col">
+        <div class="header-action">
+          <a href="#" class="link">
+            <span class="link-icon">
+              <img src="img/avatar.png" alt="">
+            </span>
+            <span class="link-title">Press Preview</span>
+          </a>
+          <button data-action="toggle-menu" class="btn-toggle-menu d-block d-md-none">
+            <i></i>
+            <i></i>
+            <i></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<div class="mobile-menu" data-area="mobile-menu" data-simplebar>
+  <div class="mobile-menu--container">
+    <button class="mobile-menu-close" data-action="toggle-menu">
+      <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect y="16.2635" width="23" height="4" transform="rotate(-45 0 16.2635)" fill="#333333"/>
+        <rect x="3" y="0.263454" width="23" height="4" transform="rotate(45 3 0.263454)" fill="#333333"/>
+      </svg>
+    </button>
+
+    <div class="main-menu">
+      <div class="main-menu-item">
+        <a href="#" class="main-menu-link">Home</a>
+      </div>
+
+      <div class="main-menu-item has-submenu" data-submenu="submenu-submenu-1">
+        <span class="has-submenu-icon">
+          <svg width="17" height="10" viewBox="0 0 17 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M5.78196 7.82158L8.09473 5.58694L2.3128 0.000350778L2.70816e-05 2.23499L5.78196 7.82158Z" fill="#333333"/>
+            <path d="M5.72434 7.76536L8.03711 10L16.074 2.23464L13.7612 -1.90146e-07L5.72434 7.76536Z" fill="#333333"/>
+          </svg>
+        </span>
+        <a data-action="submenu-toggle" href="#submenu-1" class="main-menu-link">Topics</a>
+        <div class="main-menu-sub" id="submenu-1">
+          <ul>
+            <li><a href="#">Career </a></li>
+            <li><a href="#">Conversations </a></li>
+            <li><a href="#">Creativity </a></li>
+            <li><a href="#">Entrepreneurship </a></li>
+            <li><a href="#">Happiness </a></li>
+            <li><a href="#">Health </a></li>
+            <li><a href="#">Parenting </a></li>
+            <li><a href="#">Psychology </a></li>
+            <li><a href="#">Technology</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="main-menu-item has-submenu" data-submenu="submenu-submenu-2">
+        <span class="has-submenu-icon">
+          <svg width="17" height="10" viewBox="0 0 17 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M5.78196 7.82158L8.09473 5.58694L2.3128 0.000350778L2.70816e-05 2.23499L5.78196 7.82158Z" fill="#333333"/>
+            <path d="M5.72434 7.76536L8.03711 10L16.074 2.23464L13.7612 -1.90146e-07L5.72434 7.76536Z" fill="#333333"/>
+          </svg>
+        </span>
+        <a data-action="submenu-toggle" href="#submenu-2" class="main-menu-link">Thought Leaders</a>
+        <div class="main-menu-sub" id="submenu-2">
+          <ul>
+            <li>
+              <a href="#">
+                <span class="small-sircle-img">
+                  <img src="./img/person-1.png" alt="Adam Grant">
+                </span>
+                Adam Grant
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span class="small-sircle-img">
+                  <img src="./img/person-2.png" alt="Daniel Pink">
+                </span>
+                Daniel Pink
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span class="small-sircle-img">
+                  <img src="./img/person-3.png" alt="Susan Cain">
+                </span>
+                Susan Cain
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span class="small-sircle-img">
+                  <img src="./img/person-4.png" alt="Malcolm Gladwell">
+                </span>
+                Malcolm Gladwell
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span class="small-sircle-img">
+                  <img src="./img/person-5.png" alt="Daniel Coyle">
+                </span>
+                Daniel Coyle
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span class="small-sircle-img">
+                  <img src="./img/person-6.png" alt="Alex Hutchinson">
+                </span>
+                Alex Hutchinson
+              </a>
+            </li>
+          </ul>
+          <a href="#">View All →</a>
+        </div>
+      </div>
+
+      <div class="main-menu-item">
+        <a href="#" class="main-menu-link">About Us</a>
+      </div>
+    </div>
+
+
+
+  </div>
+</div>
+<section class="section dashboard">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="section-title">
+          <h1 class="title title-1">Dashboard</h1>
+        </div>
+      </div>
+    </div>
+    <div class="section-content">
+      <div class="row">
+        <div class="col-12">
+          <ul class="dashboard-nav">
+            <li>
+              <a href="dashboard.html" class="link">Membership Status</a>
+            </li>
+            <li class="active">
+              <a href="dashboard-payment-settings.html" class="link">Payment Settings</a>
+            </li>
+            <li>
+              <a href="dashboard-edit-profile.html" class="link">Edit Profile</a>
+            </li>
+            <li>
+              <a href="dashboard-shipping.html" class="link">Shipping</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-3 col-md-4">
+          <div class="dashboard-sidebar">
+            <h3 class="title title-3">Payment Settings</h3>
+            <h5 class="title title-5">Express Membership</h5>
+            <div class="card">
+              <div class="card-icon">
+                <img src="img/visa.svg" alt="Visa">
+              </div>
+              <div class="card-content">
+                <p class="card-content-title">Name</p>
+                <p class="card-content-number">1234 1234 1234 2313</p>
+              </div>
+              <div class="card-action">
+                <button class="card-action-btn">
+                  <img src="img/edit.svg" alt="">
+                </button>
+                <button class="card-action-btn">
+                  <img src="img/close-yellow.svg" alt="">
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-8 offset-lg-1 col-md-8">
+          <div class="dashboard-content">
+            <h4 class="title title-4">Update Payment Method</h4>
+            <div class="form form-payment">
+              <label class="input-container">
+                <span class="input-container-label">Name on Card</span>
+                <input type="text" class="input">
+              </label>
+              <div class="input-group">
+                <label class="input-container">
+                  <span class="input-container-label">Card Number</span>
+                  <input type="text" class="input">
+                </label>
+                <label class="input-container">
+                  <span class="input-container-label">Expires</span>
+                  <input type="text" class="input">
+                </label>
+                <label class="input-container">
+                  <span class="input-container-label">CVC</span>
+                  <input type="text" class="input">
+                </label>
+              </div>
+              <button class="btn btn-yellow">Save</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="section download-banner">
+  <div class="container">
+    <div class="row">
+      <div class="col-xl-6 offset-xl-0 col-lg-7 offset-lg-1 col-md-7">
+        <div class="download-banner-content">
+          <p class="title title-1">Download <br> the Next Big Idea App</p>
+          <div class="download-banner-action">
+            <a href="#" class="download-link">
+              <img src="img/app-store.svg" alt="">
+            </a>
+            <a href="#" class="download-link">
+              <img src="img/play-market.png" alt="">
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="col-xl-6 col-lg-4 col-md-5">
+          <div class="download-banner-preview">
+            <img src="img/phone.png" alt="Download the Next Big Idea App">
+          </div>
+        </div>
+    </div>
+  </div>
+</section>
+<footer class="page-footer">
+  <div class="container">
+    <img src="./img/footer-1.png" alt="" class="d-block d-sm-none mx-center">
+
+    <div class="footer-row">
+      <div class="footer-left">
+        <div class="footer-menu">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms & Conditions </a>
+          <a href="#">FAQs</a>
+          <a href="#">About Us</a>
+          <a href="#">Enterprise</a>
+          <a href="#">Gifts</a>
+          <a href="#">Podcast</a>
+        </div>
+        <div class="copy">Copyright &copy; Next Big Idea Club</div>
+      </div>
+      <div class="footer-right">
+        <img src="./img/footer-1.png" alt="" class="d-none d-sm-block">
+        <div class="footer-soc-list">
+          <a href="#"><img src="./img/footer-2.png" alt=""></a>
+          <a href="#"><img src="./img/footer-3.png" alt=""></a>
+          <a href="#"><img src="./img/footer-4.png" alt=""></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+</main>
+
+<script src="js/scripts.min.js"></script>
+<script src="js/lib.js"></script>
+<script src="js/main.js"></script>
+
+</body>
+</html>

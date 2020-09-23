@@ -1,0 +1,191 @@
+.event{
+  border: 1px #D8D8D8 solid;
+  padding: 35px 40px 38px;
+  margin-bottom: 20px;
+    &-title{
+      color: $color-blue;
+      position: relative;
+      padding-bottom: 14px;
+      margin-bottom: 25px;
+      border-bottom: 1px #D8D8D8 solid;
+    }
+    &-content{
+      position: relative;
+        &-title{
+          font-size: 15px;
+          font-weight: 700;
+          padding-bottom: 10px;
+            p{
+              margin: 0;
+            }
+        }
+        &-description{
+          padding: 2px 0;
+            p{
+              display: -webkit-box;
+              -webkit-box-orient: vertical;
+              -webkit-line-clamp: 5;
+              overflow: hidden;
+                a{
+                    &:before{
+                      height: 100%;
+                    }
+                }
+            }
+            @include min(md){
+              min-height: 99px;
+            }
+            @include max(sm){
+              min-height: 99px;
+            }
+            @include max(xsm){
+              min-height: 0;
+            }
+        }
+        &-action{
+          padding-top: 32px;
+            .btn{
+              width: 100%;
+                @include min(sm){
+                  padding: 14px 20px;
+                }
+                @include max(lg){
+                  font-size: 16px;
+                }
+            }
+        }
+        &-row{
+            @include min(xsm){
+              display: flex;
+            }
+            .event-content{
+              flex: 1;
+              padding: 0 50px;
+                @include min(xsm){
+                  &:before{
+                    content: '';
+                    position: absolute;
+                    top: 5px;
+                    bottom: 0;
+                    right: 0;
+                    width: 1px;
+                    background-color: #D8D8D8;
+                  }
+                  &:nth-child(1){
+                    padding-left: 0;
+                  }
+                  &:last-child{
+                    padding-right: 0;
+                    &:before{
+                      display: none;
+                    }
+                  }
+                }
+                @include max(xsm){
+                  padding: 0 0 40px;
+                    &:last-child{
+                      padding-bottom: 0;
+                    }
+                }
+            }
+        }
+    }
+    @include min(md){
+      min-height: 317px;
+    }
+    @include max(sm){
+      padding: 30px 20px;
+      min-height: 298px;
+    }
+    @include max(xsm){
+      min-height: 0;
+      padding: 35px;
+    }
+}
+
+.reading{
+    &-banner{
+      background-color: $color-blue;
+      padding: 23px 30px 30px;
+      color: $white;
+        &-title{
+          color: inherit;
+          margin-bottom: 28px;
+        }
+        &-item{
+          display: flex;
+          color: inherit;
+          text-decoration: none;
+          margin-bottom: 10px;
+            .reading{
+                &-preview{
+                  width: 44px;
+                  display: block;
+                }
+                &-content{
+                  padding: 5px 0 0 18px;
+                    &-location{
+                      font-size: 13px;
+                    }
+                    &-title{
+                      font-size: 15px;
+                      font-weight: 700;
+                    }
+                    &-date{
+                      font-size: 15px;
+                    }
+                }
+            }
+        }
+        &-action{
+          padding-top: 15px;
+            .btn{
+              color: inherit;
+              padding: 14px 15px;
+            }
+        }
+        &-list{
+            @include max(sm){
+              display: flex;
+                .reading-banner-item{
+                  margin-right: 20px;
+                  flex: 1;
+                    &:last-child{
+                      margin-right: 0;
+                    }
+                }
+            }
+            @include max(xsm){
+              flex-direction: column;
+            }
+        }
+    }
+}
+
+.calendar{
+  padding: 35px 0;
+    &-title{
+      color: $color-blue;
+      margin-bottom: 20px;
+    }
+    &-event{
+      border-bottom: 1px #D8D8D8 solid;
+      padding-bottom: 10px;
+      margin-bottom: 20px;
+        &:last-child{
+          border-bottom: none;
+        }
+        &-date{
+          font-size: 13px;
+          margin: 0;
+        }
+        &-title{
+          font-weight: 700;
+          font-size: 15px;
+          text-decoration: none;
+          color: $color-black;
+          display: inline-block;
+          margin: 5px 0;
+        }
+    }
+}

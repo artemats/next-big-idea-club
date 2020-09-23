@@ -1,0 +1,39 @@
+{
+  "name": "next_big_idea_club",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "scripts": {
+    "start": "gulp",
+    "build": "gulp build"
+  },
+  "author": "arte",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.11.6",
+    "@babel/plugin-proposal-class-properties": "^7.10.4",
+    "@babel/preset-env": "^7.11.5",
+    "@babel/register": "^7.11.5",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "bootstrap": "^4.5.2",
+    "browser-sync": "^2.26.12",
+    "cssnano": "^4.1.10",
+    "del": "^5.1.0",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-babel": "^8.0.0",
+    "gulp-cache": "^1.1.3",
+    "gulp-cheerio": "^1.0.0",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-group-css-media-queries": "^1.2.2",
+    "gulp-html-minifier2": "^1.1.11",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-postcss": "^8.0.0",
+    "gulp-replace": "^1.0.0",
+    "gulp-rigger": "^0.5.8",
+    "gulp-sass": "^4.1.0",
+    "gulp-svg-sprite": "^1.5.0",
+    "gulp-uglify": "^3.0.2"
+  }
+}

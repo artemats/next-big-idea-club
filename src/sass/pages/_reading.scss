@@ -1,0 +1,105 @@
+.reading{
+    &-content {
+      text-decoration: none;
+      color: inherit;
+        &-location {
+          display: block;
+        }
+        &-title {
+          position: relative;
+          display: inline-flex;
+          padding-right: 12px;
+            &:before {
+              content: '→';
+              position: absolute;
+              top: 45%;
+              right: 0;
+              transform: translateY(-50%);
+              line-height: 1em;
+              font-size: 16px;
+            }
+        }
+        &-date {
+          display: block;
+        }
+    }
+    &-box{
+      margin-bottom: 42px;
+        &-tags{
+          padding: 20px 0 5px;
+          display: flex;
+          flex-wrap: wrap;
+            .tag{
+              margin-left: 10px;
+                &:nth-child(1){
+                  margin-left: 0;
+                }
+            }
+        }
+        &-preview{
+          height: 364px;
+          overflow: hidden;
+          display: block;
+            img{
+              object-fit: cover;
+              object-position: center top;
+              width: 100%;
+              height: 100%;
+            }
+            @include max(sm){
+              height: 70vw;
+            }
+            @media only screen and (max-width: 575px) {
+              height: 135vw;
+            }
+        }
+        &-content{
+          padding: 4px 0;
+          text-decoration: none;
+          color: inherit;
+        }
+        .reading-content{
+            &-location{
+              font-size: 14px;
+              margin-bottom: 5px;
+            }
+            &-title{
+              font-size: 18px;
+              font-weight: 700;
+            }
+            &-date{
+              font-size: 18px;
+            }
+        }
+    }
+    &-action{
+      text-align: center;
+    }
+    &-filter{
+      margin-bottom: 60px;
+      text-align: left;
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-start;
+        .dropdown-header{
+          height: 23px;
+        }
+        .tags{
+          margin-right: 10px;
+        }
+        @include max(sm){
+          margin-bottom: 30px;
+        }
+    }
+    &-sort{
+      margin-bottom: 60px;
+      text-align: right;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+        @include max(sm){
+          text-align: left;
+          justify-content: flex-start;
+        }
+    }
+}

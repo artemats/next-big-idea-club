@@ -1,0 +1,36 @@
+$font-base: 'Source Sans Pro', sans-serif;
+
+$font-extra: 'Helvetica Neue', sans-serif;
+
+$color-black: #333333;
+$color-blue: #1948CB;
+$color-blue-100: #CBD9FF;
+$color-base-bg: #fff;
+$color-yellow: #FFD600;
+$color-white: #FFF;
+
+// css transition duration
+$t-time: 0.3s;
+
+$heading-font-sizes: (
+  h1: 133,
+  h2: 64,
+  h3: 48,
+  h4: 24,
+);
+
+$breakpoints: (
+  xs: 420,
+  xsm: 640,
+  sm: 765,
+  md: 991,
+  lg: 1200,
+  xl: 1500
+);
+
+$column-gutter: 30px;
+
+$container: 1100px;
+
+$grid-gutter-width: 20px;
+$container-max-widths: ();

@@ -1,0 +1,147 @@
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: $font-base;
+  color: $color-black;
+}
+
+.container {
+  max-width: $container;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.btn {
+  line-height: 1;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: bold;
+  color: $color-black;
+  display: inline-block;
+  padding: 12px 18px;
+  transition: $t-time;
+  outline: none;
+  cursor: pointer;
+  white-space: nowrap;
+  text-align: center;
+
+  &[disabled] {
+    background-color: rgba(128, 128, 128, 0.53);
+    border-color: transparent;
+    opacity: 0.7;
+    box-shadow: none!important;
+  }
+
+  @include min(sm) {
+    font-size: 18px;
+    padding: 15px 39px;
+  }
+
+  &-yellow {
+    background-color: $color-yellow;
+    border: 1px solid $color-yellow;
+    box-shadow: 0px 9px 22px transparent;
+
+    &:focus, &:active, &:hover {
+      box-shadow: 0px 9px 22px rgba(255, 214, 0, 0.42);
+    }
+  }
+
+  &-outline-yellow {
+    border: 1px solid $color-yellow;
+    font-family: $font-extra;
+      @include min(sm) {
+        font-size: 18px;
+        padding: 14px 30px;
+      }
+      &:focus, &:active, &:hover {
+        background-color: $color-yellow;
+      }
+  }
+  &-sm{
+    @include min(sm) {
+      font-size: 14px;
+    }
+  }
+}
+
+.small-sircle-img {
+  display: inline-block;
+  @include circle(49px);
+
+  > img {
+    @include object_fit_contain;
+  }
+}
+
+
+.d-flex {
+  display: flex;
+}
+
+// visibility hidden on viewport
+.d-none {
+  display: none;
+}
+
+.d-block {
+  display: block;
+}
+
+@each $name, $value in $breakpoints {
+  .d-#{$name}-none {
+    @include min($name) {
+      display: none;
+    }
+  }
+  .d-#{$name}-block {
+    @include min($name) {
+      display: block;
+    }
+  }
+}
+
+.text-center {
+  text-align: center;
+}
+
+.f-center {
+  @include f-center;
+}
+
+.f-between-sm {
+  @include max(sm) {
+    @include f-between;
+
+    > * { width: auto!important }
+  }
+}
+
+.mx-center {
+  margin: 0 auto;
+}
+
+.row {
+  @include min(sm) {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -12px;
+
+    .col-4 {
+      width: 33.33%;
+      padding: 0 12px;  
+    }
+  }
+}
+
+// over elementor
+.article-container .article-row-right {
+  .elementor-column-gap-default>.elementor-row>.elementor-column>.elementor-element-populated {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
